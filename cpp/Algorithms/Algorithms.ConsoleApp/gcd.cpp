@@ -2,7 +2,7 @@
 #include "gcd.h"
 
 
-int getGCD()
+int gcd()
 {
     cout << "Count of numbers: ";
     int n = getInputNumber(2, 100);
@@ -15,19 +15,19 @@ int getGCD()
         a[i] = getInputNumber(1, INT32_MAX);
     }
 
-    function<int(int, int)> gcd;
+    function<int(int, int)> gcdCacl;
     string msg;
 
-    if(setGcdOptions(gcd, msg, 0))
+    if(setGcdOptions(gcdCacl, msg, 0))
     {
-        gcdCalculation(gcd, a, n, msg);
+        gcdCalculation(gcdCacl, a, n, msg);
     }
     else
     {
         for(int i = 1; i <= gcdOptions; i++)
         {
-            setGcdOptions(gcd, msg, i);
-            gcdCalculation(gcd, a, n, msg);
+            setGcdOptions(gcdCacl, msg, i);
+            gcdCalculation(gcdCacl, a, n, msg);
         }
     }
 

@@ -8,7 +8,7 @@ const int gcdOptions = 2;
 
 int getInputNumber(int min, int max);
 
-int getGCD();
+int gcd();
 
 int getGCDviaDivision(int a, int b);
 

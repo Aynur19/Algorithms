@@ -4,10 +4,18 @@
 
 using namespace std;
 
+const int gcdOptions = 2;
+
+int getInputNumber(int min, int max);
+
 int getGCD();
 
 int getGCDviaDivision(int a, int b);
 
 int getGCDviaSubstraction(int a, int b);
 
-void setGcdOptions(function<int(int, int)> & gcd, string & msg);
+bool setGcdOptions(function<int(int, int)> & gcd, string & msg, int option);
+
+string numbersToString(const char * start, int * numbers, int nSize, const char * end);
+
+void gcdCalculation(function<int(int, int)> gcd, int * numbers, int nSize, string msg);

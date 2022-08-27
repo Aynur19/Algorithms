@@ -2,12 +2,10 @@
 #include "gcd.h"
 
 
-
 int getGCD()
 {
-    int n;
     cout << "Count of numbers: ";
-    cin >> n;
+    int n = getInputNumber(2, 100);
 
     int * a = new int[n];
     cout << "Enter the numbers: " << endl;

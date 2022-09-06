@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{372f8d80-4731-4d95-b5d1-578577ef0089}</ProjectGuid>
-    <RootNamespace>AlgorithmsConsoleApp</RootNamespace>
+    <ProjectGuid>{40e46db3-d70f-4dd0-957c-fd5c2e136aa5}</ProjectGuid>
+    <RootNamespace>LeetCodeTasks</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,19 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="gcd.cpp" />
-    <ClCompile Include="gcdInteractive.cpp" />
-    <ClCompile Include="helper.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="generators.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="gcdInteractive.h" />
-    <ClInclude Include="generators.h" />
-    <ClInclude Include="helper.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="data.txt" />
+    <ClCompile Include="LeetCodeTasks.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

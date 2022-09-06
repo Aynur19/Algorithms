@@ -1,86 +1,14 @@
-#include <iostream>
-#include <fstream>
-#include <sstream>
+//#include <iostream>
 //#include "gcdInteractive.h"
-
-using namespace std;
-
-//struct GcdModel
+//#include <vector>
+//
+//
+//struct GCD
 //{
-//	int result = 1;
-//	int * data = { };
-//
-//public:
-//	GcdModel(int result, int * data)
-//	{
-//		this->result = result;
-//		this->data = data;
-//	}
-//
-//	~GcdModel()
-//	{
-//		delete data;
-//	}
+//    int result = 1;
+//    vector<int> data = { };
 //};
-
-
-void radNumbersFromFile()
-{
-	ifstream fileData;
-}
-
-
-//vector<int> readStringNumbers(string strNumbers)
-//{
-//	istringstream streamNumbers(strNumbers);
-//	string strNumber;
-//	vector<int> result;
-//	int number;
 //
-//	while(streamNumbers.good())
-//	{
-//		getline(streamNumbers, strNumber, ',');
-//
-//		if(strNumber.empty())
-//		{
-//			continue;
-//		}
-//
-//
-//		number = stringToInt(strNumber, 0);
-//
-//		result.push_back(number);
-//	}
-//
-//	return result;
-//}
-//
-
-
-//vector<vector<int>> readFileNumbers(const char * filePath, const char separator)
-//{
-//	ifstream fileData;
-//	string strData;
-//
-//	vector<vector<int>> numbersData = { };
-//
-//	fileData.open(filePath);
-//
-//	if(fileData.is_open())
-//	{
-//		while(fileData.good())
-//		{
-//			getline(fileData, strData, '\n');
-//
-//			numbersData.push_back(readStringNumbers(strData));
-//		}
-//	}
-//
-//	fileData.close();
-//
-//	return numbersData;
-//}
-
 //int gcd()
 //{
 //    cout << "Count of numbers: ";
@@ -115,24 +43,49 @@ void radNumbersFromFile()
 //    return 0;
 //}
 //
-//vector<int, vector<int>> gcdCalculation(function<int(int, int)> gcdFunc, vector<int> numbers, string msg)
+//string numbersToString(const char * start, int * numbers, int nSize, const char * end)
 //{
-//    vector<int, vector<int>> results = { };
-//    int result = 1;
+//    string result = start;
+//    result.append(to_string(numbers[0]));
+//    for(int i = 1; i < nSize; i++)
+//    {
+//        result.append(", ");
+//        result.append(to_string(numbers[i]));
+//    }
+//    result.append(end);
 //
+//    return result;
+//}
+//
+//vector<GCD> gcdCalculation(function<int(int, int)> gcd, vector<vector<int>> numbers)
+//{
+//    int result;
+//
+//    result = numbers[0][0];
 //    for(int i = 0; i < numbers.size() - 1; i++)
 //    {
-//        results[i] = gcdFunc(result, numbers[i + 1]);
+//        result = gcd(result, numbers[i + 1][1]);
 //    }
+//}
 //
+//void gcdCalculation(function<int(int, int)> gcd, int * numbers, int nSize, string msg)
+//{
+//    int result;
 //
+//    msg.append(numbersToString("(", numbers, nSize, "): "));
+//    result = numbers[0];
+//    for(int i = 0; i < nSize - 1; i++)
+//    {
+//        result = gcd(result, numbers[i + 1]);
+//    }
+//    cout << msg << result << endl;
 //}
 //
 //int getInputNumber(int min, int max)
 //{
-//    string errorMsg = "Please enter an integer from "
-//        + to_string(min) + " to "
-//        + to_string(max) + "!\n";
+//    string errorMsg = "Please enter an integer from " 
+//                      + to_string(min) + " to " 
+//                      + to_string(max) + "!\n";
 //    string input;
 //    int result = 0;
 //
@@ -154,8 +107,8 @@ void radNumbersFromFile()
 //        }
 //        catch(out_of_range const & e)
 //        {
-//            cout << "The input was not in the range of numbers supported by this type."
-//                << errorMsg;
+//            cout << "The input was not in the range of numbers supported by this type." 
+//                 << errorMsg;
 //        }
 //    }
 //
@@ -218,7 +171,7 @@ void radNumbersFromFile()
 //        gcd = getGCDviaDivision;
 //        msg = "The GCD (via division) of the entered numbers ";
 //    }
-//    else if(option == 2)
+//    else if (option == 2)
 //    {
 //        gcd = getGCDviaSubstraction;
 //        msg = "The GCD (via substraction) of the entered numbers ";

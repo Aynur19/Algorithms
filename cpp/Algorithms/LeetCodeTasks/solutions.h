@@ -2,9 +2,18 @@
 #include <iostream>
 #include <vector>
 #include "helper.h"
+#include "dataStructures.h"
 
 using namespace std;
 
+
+class Solution2
+{
+public:
+    ListNode * addTwoNumbers(ListNode * l1, ListNode * l2);
+
+    void addTwoNumbers_Tests();
+};
 
 
 
@@ -15,4 +24,3 @@ public:
 
     void Solution1_TwoSum_Tests();
 };
-

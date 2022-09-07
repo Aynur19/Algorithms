@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dataStructures.cpp" />
     <ClCompile Include="helper.cpp" />
     <ClCompile Include="LeetCodeTasks.cpp" />
     <ClCompile Include="solutions.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dataStructures.h" />
     <ClInclude Include="helper.h" />
     <ClInclude Include="solutions.h" />
   </ItemGroup>

@@ -1,6 +1,6 @@
 #include "solutions.h"
 #include "helper.h"
-
+#include <unordered_map>
 
 #pragma region Solution 2
 ListNode * Solution2::addTwoNumbers(ListNode * l1, ListNode * l2)
@@ -83,19 +83,25 @@ void Solution2::addTwoNumbers_Tests()
 vector<int> Solution1::Solution1_TwoSum(vector<int> & nums, int target)
 {
     int nSize = nums.size();
-    for(int i = 0; i < nSize - 1; i++)
+    unordered_map<int, int> numbers;
+
+    int temp;
+    for(int i = 0; i < nSize; i++)
     {
-        for(int j = i + 1; j < nSize; j++)
+        temp = nums[i];
+
+        if(numbers[target - temp] > 0)
         {
-            if(nums[i] + nums[j] == target)
-            {
-                return { i,j };
-            }
+            return { i, numbers[target - temp] - 1 };
         }
 
+        if(numbers[temp] <= 0)
+        {
+            numbers[temp] = i + 1;
+        }
     }
 
-    return vector<int>(2);
+    return { 0,0 };
 }
 
 void Solution1::Solution1_TwoSum_Tests()

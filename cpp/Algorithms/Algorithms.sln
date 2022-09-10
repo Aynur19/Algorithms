@@ -7,6 +7,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algorithms.ConsoleApp", "Al
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LeetCodeTasks", "LeetCodeTasks\LeetCodeTasks.vcxproj", "{40E46DB3-D70F-4DD0-957C-FD5C2E136AA5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LeetCodeTasks.Tests", "LeetCodeTasks.Tests\LeetCodeTasks.Tests.vcxproj", "{F9A48055-68B3-4FB9-8DBD-DEBFCF68B555}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LeetCodeTasksLibrary", "LeetCodeTasksLibrary\LeetCodeTasksLibrary.vcxproj", "{EF1353EA-A18E-48C5-8460-C356F1B5D497}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +35,22 @@ Global
 		{40E46DB3-D70F-4DD0-957C-FD5C2E136AA5}.Release|x64.Build.0 = Release|x64
 		{40E46DB3-D70F-4DD0-957C-FD5C2E136AA5}.Release|x86.ActiveCfg = Release|Win32
 		{40E46DB3-D70F-4DD0-957C-FD5C2E136AA5}.Release|x86.Build.0 = Release|Win32
+		{F9A48055-68B3-4FB9-8DBD-DEBFCF68B555}.Debug|x64.ActiveCfg = Debug|x64
+		{F9A48055-68B3-4FB9-8DBD-DEBFCF68B555}.Debug|x64.Build.0 = Debug|x64
+		{F9A48055-68B3-4FB9-8DBD-DEBFCF68B555}.Debug|x86.ActiveCfg = Debug|Win32
+		{F9A48055-68B3-4FB9-8DBD-DEBFCF68B555}.Debug|x86.Build.0 = Debug|Win32
+		{F9A48055-68B3-4FB9-8DBD-DEBFCF68B555}.Release|x64.ActiveCfg = Release|x64
+		{F9A48055-68B3-4FB9-8DBD-DEBFCF68B555}.Release|x64.Build.0 = Release|x64
+		{F9A48055-68B3-4FB9-8DBD-DEBFCF68B555}.Release|x86.ActiveCfg = Release|Win32
+		{F9A48055-68B3-4FB9-8DBD-DEBFCF68B555}.Release|x86.Build.0 = Release|Win32
+		{EF1353EA-A18E-48C5-8460-C356F1B5D497}.Debug|x64.ActiveCfg = Debug|x64
+		{EF1353EA-A18E-48C5-8460-C356F1B5D497}.Debug|x64.Build.0 = Debug|x64
+		{EF1353EA-A18E-48C5-8460-C356F1B5D497}.Debug|x86.ActiveCfg = Debug|Win32
+		{EF1353EA-A18E-48C5-8460-C356F1B5D497}.Debug|x86.Build.0 = Debug|Win32
+		{EF1353EA-A18E-48C5-8460-C356F1B5D497}.Release|x64.ActiveCfg = Release|x64
+		{EF1353EA-A18E-48C5-8460-C356F1B5D497}.Release|x64.Build.0 = Release|x64
+		{EF1353EA-A18E-48C5-8460-C356F1B5D497}.Release|x86.ActiveCfg = Release|Win32
+		{EF1353EA-A18E-48C5-8460-C356F1B5D497}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 #include "helper.h"
-#include "dataStructures.h"
+#include "linkedList.h"
 
 using namespace std;
 

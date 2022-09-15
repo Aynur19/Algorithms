@@ -4,31 +4,34 @@
     {
         public static int MySqrt(int x)
         {
-            int result = x / 2;
-            while (result * result > x)
+            if (x < 4)
             {
-                result /= 2;
+                return 1;
+            }
+            else if (x < 9)
+            {
+                return 2;
             }
 
-            if (result * result == x)
-            {
-                return result;
-            }
+            int right = x/2;
+            int left = 2;
+            bool isDone = false;
 
-            do
+            while (true)
             {
-                result++;
-            }
-            while (result * result < x);
-
-
-            if (result * result == x)
-            {
-                return result;
-            }
-            else
-            {
-                return result - 1;
+                if(right * right / right != right || right * right > x)
+                {
+                    right -= (right - left) / 2;
+                }
+                else if (right * right == x || (right + 1) * (right + 1) > x)
+                {
+                    return right;
+                }
+                else
+                {
+                    left = right;
+                    right *= 2;
+                }
             }
         }
     }
